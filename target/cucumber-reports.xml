@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.194" tests="3" skipped="0" failures="3" errors="0">
+<testcase classname="Product - Store" name="Validación del precio de un producto - Example #1.1" time="0.027">
+<failure/>
+<system-out><![CDATA[
+Given estoy en la página de la tienda.......................................undefined
+And me logueo con mi usuario "fer123@gmail.com" y clave "clave123.".........skipped
+When navego a la categoria "Clothes" y subcategoria "Men"...................skipped
+And agrego 2 unidades del primer producto al carrito........................skipped
+Then valido en el popup la confirmación del producto agregado...............skipped
+And valido en el popup que el monto total sea calculado correctamente.......skipped
+When finalizo la compra.....................................................skipped
+Then valido el titulo de la pagina del carrito..............................skipped
+And vuelvo a validar el calculo de precios en el carrito....................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Product - Store" name="Validación del precio de un producto - Example #1.2" time="0.006">
+<failure/>
+<system-out><![CDATA[
+Given estoy en la página de la tienda.......................................undefined
+And me logueo con mi usuario "invalido@gmail.com" y clave "12345"...........skipped
+When navego a la categoria "Clothes" y subcategoria "Men"...................skipped
+And agrego 2 unidades del primer producto al carrito........................skipped
+Then valido en el popup la confirmación del producto agregado...............skipped
+And valido en el popup que el monto total sea calculado correctamente.......skipped
+When finalizo la compra.....................................................skipped
+Then valido el titulo de la pagina del carrito..............................skipped
+And vuelvo a validar el calculo de precios en el carrito....................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Product - Store" name="Validación del precio de un producto - Example #1.3" time="0.003">
+<failure/>
+<system-out><![CDATA[
+Given estoy en la página de la tienda.......................................undefined
+And me logueo con mi usuario "fer123@gmail.com" y clave "clave123.".........skipped
+When navego a la categoria "Autos" y subcategoria "Men".....................skipped
+And agrego 2 unidades del primer producto al carrito........................skipped
+Then valido en el popup la confirmación del producto agregado...............skipped
+And valido en el popup que el monto total sea calculado correctamente.......skipped
+When finalizo la compra.....................................................skipped
+Then valido el titulo de la pagina del carrito..............................skipped
+And vuelvo a validar el calculo de precios en el carrito....................skipped
+]]></system-out>
+</testcase>
+</testsuite>
