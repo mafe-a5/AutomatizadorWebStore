@@ -7,11 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = {
-                "glue",        // Aquí están tus Step Definitions
-                "driver",      // Si usas hooks o configuración del WebDriver
-                "steps"        // Si tienes steps reutilizables
-        },
+        glue = {"glue", "driver"},
         plugin = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber-report.html",

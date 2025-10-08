@@ -1,4 +1,0 @@
-glue\ProductLoginStepsDef.class
-driver\DriverManager.class
-runner\RunnerTest.class
-page\LoginPage.class

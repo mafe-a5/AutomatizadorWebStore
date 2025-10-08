@@ -1,128 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="116.347" tests="3" skipped="0" failures="3" errors="0">
-<testcase classname="Product - Store" name="Validación del precio de un producto - Example #1.1" time="106.039">
-<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.id: email (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.27'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\Fer\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57426/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97a43d8a2280f8a215ae30980f7580cf">
-<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: email (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.27'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\Fer\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57426/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97a43d8a2280f8a215ae30980f7580cf
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at page.LoginPage.login(LoginPage.java:28)
-	at glue.ProductLoginStepsDef.meLogueo(ProductLoginStepsDef.java:22)
-	at ✽.me logueo con mi usuario "fer123@gmail.com" y clave "clave123."(file:///C:/Users/Fer/Downloads/TECH%20POWER/web/AutomatizadorWebStore/src/test/resources/features/ProductStore.feature:5)
+<testsuite name="Cucumber" time="12.063" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Product - Store" name="Validación del precio de un producto" time="11.938">
+<failure type="java.lang.AssertionError" message="❌ Error al agregar producto al carrito: For input string: &quot;PEN19.12&quot;">
+<![CDATA[java.lang.AssertionError: ❌ Error al agregar producto al carrito: For input string: "PEN19.12"
+	at org.junit.Assert.fail(Assert.java:89)
+	at glue.ProductLoginStepsDef.agregarProducto(ProductLoginStepsDef.java:94)
+	at ✽.agrego 2 unidades del primer producto al carrito(file:///C:/Users/Fer/Downloads/TECH%20POWER/web/AutomatizadorWebStore/src/test/resources/features/ProductStore.feature:7)
 ]]>
 </failure>
 <system-out><![CDATA[
 Given estoy en la página de la tienda.......................................passed
-And me logueo con mi usuario "fer123@gmail.com" y clave "clave123.".........failed
-When navego a la categoria "Clothes" y subcategoria "Men"...................skipped
-And agrego 2 unidades del primer producto al carrito........................skipped
-Then valido en el popup la confirmación del producto agregado...............skipped
-And valido en el popup que el monto total sea calculado correctamente.......skipped
-When finalizo la compra.....................................................skipped
-Then valido el titulo de la pagina del carrito..............................skipped
-And vuelvo a validar el calculo de precios en el carrito....................skipped
-]]></system-out>
-</testcase>
-<testcase classname="Product - Store" name="Validación del precio de un producto - Example #1.2" time="10.049">
-<failure type="org.openqa.selenium.NoSuchSessionException" message="invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=141.0.7390.55)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.27'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97a43d8a2280f8a215ae30980f7580cf, findElement {using=id, value=email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\Fer\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57426/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97a43d8a2280f8a215ae30980f7580cf">
-<![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=141.0.7390.55)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.27'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97a43d8a2280f8a215ae30980f7580cf, findElement {using=id, value=email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\Fer\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57426/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97a43d8a2280f8a215ae30980f7580cf
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	at page.LoginPage.login(LoginPage.java:28)
-	at glue.ProductLoginStepsDef.meLogueo(ProductLoginStepsDef.java:22)
-	at ✽.me logueo con mi usuario "invalido@gmail.com" y clave "12345"(file:///C:/Users/Fer/Downloads/TECH%20POWER/web/AutomatizadorWebStore/src/test/resources/features/ProductStore.feature:5)
-]]>
-</failure>
-<system-out><![CDATA[
-Given estoy en la página de la tienda.......................................passed
-And me logueo con mi usuario "invalido@gmail.com" y clave "12345"...........failed
-When navego a la categoria "Clothes" y subcategoria "Men"...................skipped
-And agrego 2 unidades del primer producto al carrito........................skipped
-Then valido en el popup la confirmación del producto agregado...............skipped
-And valido en el popup que el monto total sea calculado correctamente.......skipped
-When finalizo la compra.....................................................skipped
-Then valido el titulo de la pagina del carrito..............................skipped
-And vuelvo a validar el calculo de precios en el carrito....................skipped
-]]></system-out>
-</testcase>
-<testcase classname="Product - Store" name="Validación del precio de un producto - Example #1.3" time="0.071">
-<failure type="org.openqa.selenium.NoSuchSessionException" message="invalid session id
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.27'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97a43d8a2280f8a215ae30980f7580cf, get {url=https://qalab.bensg.com/store}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\Fer\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57426/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97a43d8a2280f8a215ae30980f7580cf">
-<![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.27'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97a43d8a2280f8a215ae30980f7580cf, get {url=https://qalab.bensg.com/store}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\Fer\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57426/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97a43d8a2280f8a215ae30980f7580cf
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
-	at page.LoginPage.goToStore(LoginPage.java:24)
-	at glue.ProductLoginStepsDef.abrirTienda(ProductLoginStepsDef.java:17)
-	at ✽.estoy en la página de la tienda(file:///C:/Users/Fer/Downloads/TECH%20POWER/web/AutomatizadorWebStore/src/test/resources/features/ProductStore.feature:4)
-]]>
-</failure>
-<system-out><![CDATA[
-Given estoy en la página de la tienda.......................................failed
-And me logueo con mi usuario "fer123@gmail.com" y clave "clave123.".........skipped
-When navego a la categoria "Autos" y subcategoria "Men".....................skipped
-And agrego 2 unidades del primer producto al carrito........................skipped
+And me logueo con mi usuario "fhsoto5@gmail.com" y clave "clave123."........passed
+When navego a la categoria "Clothes" y subcategoria "Men"...................passed
+And agrego 2 unidades del primer producto al carrito........................failed
 Then valido en el popup la confirmación del producto agregado...............skipped
 And valido en el popup que el monto total sea calculado correctamente.......skipped
 When finalizo la compra.....................................................skipped
